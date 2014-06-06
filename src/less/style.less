@@ -1,0 +1,74 @@
+@import "reset";
+@import "fonts";
+
+// MAIN STYLE
+body{
+	color:#5c5c5c;
+}
+
+section.sidebar{
+	width:30%;
+	height:100%;
+	position:absolute;
+	left:0;
+	background-color: #272727;
+
+	.today{
+		font-family: 'Open Sans', sans-serif;
+		width:100%;
+		text-align:center;
+		padding-top:40px;
+	}
+
+	.time{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		font-size:40px;
+		width:100%;
+		text-align:center;
+		padding-top:10px;
+	}
+
+	ul{
+		padding-top:35px;
+		li{
+			font-family: 'Open Sans', sans-serif;
+			font-weight:400;
+			color: #8a8a8a;
+			font-size: 16px;
+			padding: 15px 0px 15px 20px;
+
+			&.active{
+				background-color:#e97c5f;
+				color:#FFFFFF;
+			}
+		}
+	}
+}
+
+section.content{
+	width:70%;
+	height:100%;
+	overflow-y: scroll;
+	position:absolute;
+	right:0;
+	background-color: #fefefe;
+	
+	.project{
+		padding:20px 20px;
+		h2{
+			font-family: 'Open Sans', sans-serif;
+			font-weight:400;
+			font-size:18px;
+		}
+	}
+
+	.add_project{
+		padding:20px 20px;
+	}
+
+	.project:nth-child(odd){
+		background-color: #f3f3f3;
+	}
+}
+// PAGES STYLE
