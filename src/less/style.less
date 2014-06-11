@@ -42,6 +42,10 @@ section.sidebar{
 				background-color:#e97c5f;
 				color:#FFFFFF;
 			}
+
+			&:hover{
+				cursor:pointer;
+			}
 		}
 	}
 }
@@ -70,5 +74,67 @@ section.content{
 	.project:nth-child(odd){
 		background-color: #f3f3f3;
 	}
+	
+	canvas{
+		margin-bottom:30px;
+	}
+
+	.summary{
+		font-family: "Open Sans",sans-serif;
+		font-size: 30px;
+		padding: 30px;
+		text-align: center;
+		font-weight: 300;
+	}
+
+	.date{
+		text-align:center;
+		display:block;
+		width:20%;
+		height:100px;
+		float:left;
+
+		font-family: 'Open Sans', sans-serif;
+
+		padding-top: 32px;
+
+		span{
+			display:block;
+			width: 100%;
+		}
+
+		span.date_elem{
+			font-size: 20px;
+			margin-bottom: 6px;
+		}
+
+		&{
+			border-right: 1px solid #c5c5c5;
+			border-top: 1px solid #c5c5c5;
+		}
+
+		&:hover{
+			cursor:pointer;
+		}
+	}
+
+	.details{
+		h2{
+			font-weight: 300;
+			font-size: 24px;
+			padding-bottom: 5px;
+		}
+		font-family: 'Open Sans', sans-serif;
+		padding:20px;
+
+		.project_details{
+			font-weight: 300;
+			font-size: 16px;
+		}
+	}
+}
+
+form{
+	display: inline-block;
 }
 // PAGES STYLE
